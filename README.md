@@ -1,5 +1,5 @@
 # JMFP
-(JMFP) JSON Message Forwarding Protocol
+JSON Message Forwarding Protocol / JSON消息转发协议 / JMFP
 
 ---
 
