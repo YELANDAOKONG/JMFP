@@ -29,7 +29,11 @@ if client.connect():
     while True:
         if client.send_time_message():
             print("[~] Time message sent successfully.")
-        time.sleep(30)
+        time.sleep(10)
+        client.send_keepalive()
+        time.sleep(10)
+        client.send_keepalive()
+        time.sleep(10)
 else:
     print("[^] Failed to connect to the server.")
 
