@@ -68,12 +68,16 @@ class MFPClient:
             pass
     
     def _send_keepalive(self):
-        self.send_message(
+        self.send_message_raw(
             {
                 "type": "keepalive",
                 "keep": True
             }
         )
+        return
+    
+    def send_keepalive(self):
+        self._send_keepalive()
         return
 
     def connect(self) -> bool:
